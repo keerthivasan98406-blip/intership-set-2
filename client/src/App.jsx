@@ -109,7 +109,7 @@ function App() {
       <AuthProvider>
         <SocketProvider>
           <TaskProvider>
-            <Router>
+            <Router basename={import.meta.env.BASE_URL}>
               <AppRoutes />
               <Toaster
                 position="top-right"
